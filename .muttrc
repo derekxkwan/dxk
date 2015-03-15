@@ -1,10 +1,10 @@
 #sets up mail box in home folder
-set mbox_type = maildir
-set mbox="~/mail/inbox/"
-set spoolfile="~/mail/inbox/"
-set folder = "~/mail"
-set record ="~/mail/sent/"
-set postponed = "~/mail/drafts/"
+set mbox_type = Maildir
+set mbox="~/.maildir"
+set spoolfile="~/.maildir"
+set folder = "~/.maildir"
+#set record ="~/mail/sent/"
+#set postponed = "~/mail/drafts/"
 
 
 #gmail info
