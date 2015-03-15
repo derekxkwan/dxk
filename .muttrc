@@ -71,6 +71,10 @@ set signature = "~/.mutt/signature"
 #unignore from: to: cc: bcc: date: subject: #except
 #hdr_order from: to: cc: bcc: date: subject: #ordering
 
+#view
+alternative_order text/plain text/html
+auto_view text/html
+
 #editor
 set editor='vim + -c "set textwidth=72" -c "set wrap" -c "set nocp" -c "?^$"'
 set attribution = "On %d, %n wrote:"
