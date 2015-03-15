@@ -11,11 +11,17 @@ set postponed = "~/mail/drafts/"
 set from = "user@gmail.com"
 set realname = "My Name"
 set imap_user="user@gmail.com"
-set imap_pass="pass"
+set imap_pass="mypass"
 
 
 #editor
 set editor='vim + -c "set textwidth=72" -c "set wrap" -c "set nocp" -c "?^$"'
+set attribution = "On %d, %n wrote:"
+set date_format = "%b %d"
+set forward_format = "Fwd: %s"
+set index_format = "[%Z] %d %-20.20F %s"
+set status_format = "-%r- %v ---[Folder: %f, Msgs: %m%?n? New: %n?%?d? Del: %d?%?t? Tag: %t?%?l? %l? ]%?p?---- .: %p waiting to send :. ?--%>- (%P) ---"
+set alias_format = "%4n %t %-20a %r"
 
 #FOLDERS
 #REMOTE GMAIL FOLDERS
@@ -32,18 +38,57 @@ set certificate_file =~/.mutt/certificates
 
 #SMTP SETTINGS
 set smtp_url = "smtp://user@smtp.gmail.com:587/"
-set smtp_pass="pass"
+set smtp_pass="mypass"
 
 #SECURING
 set move = no #stop asking to move read messages to mbox
 set imap_keepalive = 900
 
-#Special Keybindings  
+#OTHER
+set mail_check = 120
+set timeout = 600
+
+#SORT
+set sort = "threads"
+set sort_aux = "reverse-last-date-received" #newest-first
+
+#COMPOSING
+set askcc = yes
+set edit_headers = yes
+set envelope_from = yes #same env
+set fast_reply = yes 
+set forward_decode = yes #decode w fwd
+set forward_quote = yes #include message in forward
+set include = yes #include message in reply
+set mime_forward = no #include attachments in body
+set reply_to = yes 
+set reverse_name = yes 
+set sig_dashes = yes #dashes before sig
+
+#headers
+#ignore * #ignore all headers
+#unignore from: to: cc: bcc: date: subject: #except
+#hdr_order from: to: cc: bcc: date: subject: #ordering
+
+#editor
+set editor='vim + -c "set textwidth=72" -c "set wrap" -c "set nocp" -c "?^$"'
+set attribution = "On %d, %n wrote:"
+set date_format = "%b %d"
+set forward_format = "Fwd: %s"
+set index_format = "[%Z] %d %-20.20F %s"
+set status_format = "-%r- %v ---[Folder: %f, Msgs: %m%?n? New: %n?%?d? Del: %d?%?t? Tag: %t?%?l? %l? ]%?p?---- .: %p waiting to send :. ?--%>- (%P) ---"
+set alias_format = "%4n %t %-20a %r"
+
+#FOLDERSecial Keybindings  
 bind editor <space> noop  
 macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"  
 macro index ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"  
-macro index gs "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to Sent Mail"  
+macro index gs "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to Sent Mail" 
 macro index gd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"  
+
+#wrapping
+set nosmart_wrap
+set nomarkers
 
 #goobook contact integration
 set query_command="goobook query '%s'"
@@ -51,7 +96,7 @@ macro index,pager a "<pipe-message>goobook add<return>" "add sender to google co
 bind editor <Tab> complete-query
 
 # Colors  
- color hdrdefault cyan default  
+ color hdrdefault brightmagenta default  
  color attachment yellow default  
  color header brightyellow default "From: "  
  color header brightyellow default "Subject: "  
@@ -74,4 +119,4 @@ bind editor <Tab> complete-query
  # identifies email addresses  
  color body  brightred black [\-\.+_a-zA-Z0-9]+@[\-\.a-zA-Z0-9]+  
  # identifies URLs  
- color body  brightblue black (https?|ftp)://[\-\.,/%~_:?&=\#a-zA-Z0-9]+ 
+ color body  brightblue black (https?|ftp)://[\-\.,/%~_:?&=\#a-zA-Z0-9]+  
