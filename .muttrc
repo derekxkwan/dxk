@@ -1,0 +1,77 @@
+#sets up mail box in home folder
+set mbox_type = maildir
+set mbox="~/mail/inbox/"
+set spoolfile="~/mail/inbox/"
+set folder = "~/mail"
+set record ="~/mail/sent/"
+set postponed = "~/mail/drafts/"
+
+
+#gmail info
+set from = "user@gmail.com"
+set realname = "My Name"
+set imap_user="user@gmail.com"
+set imap_pass="pass"
+
+
+#editor
+set editor='vim + -c "set textwidth=72" -c "set wrap" -c "set nocp" -c "?^$"'
+
+#FOLDERS
+#REMOTE GMAIL FOLDERS
+set folder = 'imaps://imap.gmail.com:993'
+set spoolfile = '+INBOX'
+set postponed = '+[Google Mail]/Drafts'
+set trash = '+[Google Mail]/Trash'
+#set any_label = '+[Google Mail]/any_label'
+
+#LOCAL FOLDERS FOR CACHED HEADERS AND CERTIFICATES
+set header_cache = ~/.mutt/cache/headers
+set message_cachedir = ~/.mutt/cache/bodies
+set certificate_file =~/.mutt/certificates
+
+#SMTP SETTINGS
+set smtp_url = "smtp://user@smtp.gmail.com:587/"
+set smtp_pass="pass"
+
+#SECURING
+set move = no #stop asking to move read messages to mbox
+set imap_keepalive = 900
+
+#Special Keybindings  
+bind editor <space> noop  
+macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"  
+macro index ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"  
+macro index gs "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to Sent Mail"  
+macro index gd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"  
+
+#goobook contact integration
+set query_command="goobook query '%s'"
+macro index,pager a "<pipe-message>goobook add<return>" "add sender to google contacts"
+bind editor <Tab> complete-query
+
+# Colors  
+ color hdrdefault cyan default  
+ color attachment yellow default  
+ color header brightyellow default "From: "  
+ color header brightyellow default "Subject: "  
+ color header brightyellow default "Date: "  
+ color quoted green default  
+ color quoted1 cyan default  
+ color quoted2 green default  
+ color quoted3 cyan default  
+ color error   red       default     # error messages  
+ color message  white      default     # message informational messages  
+ color indicator white      red       # indicator for the "current message"  
+ color status  white      blue      # status lines in the folder index sed for the mini-help line  
+ color tree   red       default     # the "tree" display of threads within the folder index  
+ color search  white      blue      # search matches found with search within the internal pager  
+ color markers  red       default     # The markers indicate a wrapped line  
+ color index   yellow default '~O'  
+ color index   yellow default '~N'  
+ color index   brightred    default '~F'  # Flagged Messages are important!  
+ color index   blue default  '~D'      # Deleted Mails - use dark color as these are already "dealt with"  
+ # identifies email addresses  
+ color body  brightred black [\-\.+_a-zA-Z0-9]+@[\-\.a-zA-Z0-9]+  
+ # identifies URLs  
+ color body  brightblue black (https?|ftp)://[\-\.,/%~_:?&=\#a-zA-Z0-9]+ 
