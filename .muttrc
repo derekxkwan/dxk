@@ -79,7 +79,7 @@ set index_format = "[%Z] %d %-20.20F %s"
 set status_format = "-%r- %v ---[Folder: %f, Msgs: %m%?n? New: %n?%?d? Del: %d?%?t? Tag: %t?%?l? %l? ]%?p?---- .: %p waiting to send :. ?--%>- (%P) ---"
 set alias_format = "%4n %t %-20a %r"
 
-#FOLDERSecial Keybindings  
+#Special Keybindings  
 bind editor <space> noop  
 macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"  
 macro index ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"  
