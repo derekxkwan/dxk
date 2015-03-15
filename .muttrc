@@ -64,6 +64,7 @@ set mime_forward = no #include attachments in body
 set reply_to = yes 
 set reverse_name = yes 
 set sig_dashes = yes #dashes before sig
+set signature = "~/.mutt/signature"
 
 #headers
 #ignore * #ignore all headers
