@@ -15,8 +15,10 @@ set nu
 set pastetoggle=<F11>
 set encoding=utf8
 
+set tabstop=8
+set expandtab
+set softtabstop=4
 set shiftwidth=4
-set tabstop=4
 
 set magic
 set ruler
