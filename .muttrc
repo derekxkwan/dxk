@@ -128,3 +128,8 @@ bind index R group-reply
  color body  brightred black [\-\.+_a-zA-Z0-9]+@[\-\.a-zA-Z0-9]+  
  # identifies URLs  
  color body  brightblue black (https?|ftp)://[\-\.,/%~_:?&=\#a-zA-Z0-9]+  
+
+#macros/binding
+
+bind pager <up> previous-line #scroll inside the message rather than the index
+bind pager <down> next-line
