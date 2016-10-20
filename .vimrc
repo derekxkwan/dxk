@@ -30,3 +30,5 @@ colorscheme desert
 set background=dark
 
 nmap <silent> <C-D> :NERDTreeToggle<CR>
+
+highlight LineNr cterm=inverse
