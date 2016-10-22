@@ -1,0 +1,23 @@
+audioapi: 5
+noaudioin: False
+audioindev1: 0 2
+audioindevname1: JACK
+noaudioout: False
+audiooutdev1: 0 2
+audiooutdevname1: JACK
+audiobuf: 25
+rate: 44100
+callback: 0
+blocksize: 64
+nomidiin: True
+nomidiout: True
+path1: /home/dxk/pd-externals/Gem
+npath: 1
+standardpath: 1
+verbose: 0
+loadlib1: zexy
+loadlib2: Gem
+nloadlib: 2
+defeatrt: 0
+flags: -font-size 12 
+zoom: 1
