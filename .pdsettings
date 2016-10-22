@@ -11,7 +11,7 @@ callback: 0
 blocksize: 64
 nomidiin: True
 nomidiout: True
-path1: /home/dxk/pd-externals/Gem
+path1: ~/pd-externals/Gem
 npath: 1
 standardpath: 1
 verbose: 0
