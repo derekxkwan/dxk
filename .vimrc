@@ -26,8 +26,10 @@ set ruler
 set noerrorbells
 set novisualbell
 
-colorscheme desert
+" color stuff
+colorscheme koehler
 set background=dark
+set t_Co=256
 
 nmap <silent> <C-D> :NERDTreeToggle<CR>
 
