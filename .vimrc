@@ -19,7 +19,6 @@ set tabstop=8
 set expandtab
 set softtabstop=4
 set shiftwidth=4
-set laststatus=2
 
 set magic
 set ruler
@@ -33,3 +32,7 @@ set background=dark
 nmap <silent> <C-D> :NERDTreeToggle<CR>
 
 highlight LineNr cterm=inverse
+
+" vim-airline related
+set laststatus=2
+let g:airline#extensions#tabline#enabled = 1
