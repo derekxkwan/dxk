@@ -13,7 +13,7 @@ set cmdheight=2
 set confirm
 set nu
 set pastetoggle=<F11>
-set encoding=utf8
+set encoding=utf-8
 
 set tabstop=8
 set expandtab
