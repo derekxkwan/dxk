@@ -19,6 +19,7 @@ set tabstop=8
 set expandtab
 set softtabstop=4
 set shiftwidth=4
+set laststatus=2
 
 set magic
 set ruler
