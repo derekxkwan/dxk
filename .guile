@@ -1,2 +1,7 @@
+;enable up-arrow
 (use-modules (ice-9 readline))
 (activate-readline)
+
+;disable saving of values
+(use-modules (ice-9 history))
+(disable-value-history!)
