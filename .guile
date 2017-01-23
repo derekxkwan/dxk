@@ -5,3 +5,6 @@
 ;disable saving of values
 (use-modules (ice-9 history))
 (disable-value-history!)
+
+;disable auto-compile
+(setenv "GUILE_AUTO_COMPILE" #f)
