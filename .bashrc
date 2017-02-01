@@ -116,6 +116,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# MY OWN STUFF
+# ================================ MY OWN STUFF ================================
 # needed for tmux to work witih the right color
 export TERM="xterm-256color"
