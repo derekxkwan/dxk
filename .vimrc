@@ -27,7 +27,7 @@ set noerrorbells
 set novisualbell
 
 " color stuff
-colorscheme peachpuff
+colorscheme koehler
 set background=dark
 set t_Co=256
 
