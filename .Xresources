@@ -1,0 +1,21 @@
+! note to self use xrdb -merge ~/.Xresources to apply
+
+! fonts
+xterm*faceName: Inconsolata for Powerline
+xterm*faceSize: 15
+xterm*saveLines: 2000
+xterm*termName: xterm-color
+xterm*eightBitInput: false
+xterm*utf8: 2
+
+! dbl-click to select whole urls
+xterm*charClass: 33:48,36-47:48,58-59:48,61:
+
+! scrollbar
+xterm*rightScrollBar: true
+xterm*ScrollBar: true
+
+! stop output to terminal from jumping down
+xterm*scrollTtyOutput: false
+
+xterm*selectToClipboard: true
