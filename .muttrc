@@ -6,6 +6,9 @@ set folder = "~/.maildir"
 #set record ="~/mail/sent/"
 #set postponed = "~/mail/drafts/"
 
+#mailboxes, no idea if this works
+mailboxes =pd-list
+
 #navigate maildir folder structure
  mailboxes + `\
  for file in ~/.maildir/.*; do \
