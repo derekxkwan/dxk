@@ -1,3 +1,6 @@
+"for nvim: ln -s ~/.vim ~/.config/nvim && ln -s ~/.vimrc
+"~/.config/nvim/init.vim
+
 execute pathogen#infect()
 
 filetype indent plugin on
