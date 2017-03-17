@@ -48,10 +48,11 @@ let g:airline_powerline_fonts = 1
 nmap <C-o> O<Esc>
 nmap <CR> o<Esc>
 
-nnoremap <Tab> <Esc>
-vnoremap <Tab> <Esc>gV
-onoremap <Tab> <Esc>
-inoremap <Tab> <Esc>`^
+"remapping for <esc> functionality
+nnoremap <D-[ <Esc>
+vnoremap <D-[> <Esc>gV
+onoremap <D-[> <Esc>
+inoremap <D-[> <Esc>`^
 inoremap <Leader><Tab> <Tab>
 
 "nvim stuff
