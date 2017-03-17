@@ -47,3 +47,20 @@ let g:airline_powerline_fonts = 1
 "before current line then after current line
 nmap <C-o> O<Esc>
 nmap <CR> o<Esc>
+
+"nvim stuff
+if has('nvim')
+    "To map <Esc> to exit terminal mode:
+    tnoremap <Esc> <C-\><C-n>
+     
+    "Navigating to other windows is only possible in normal mode.
+    tnoremap <A-h> <C-\><C-n><C-w>h
+    tnoremap <A-j> <C-\><C-n><C-w>j
+    tnoremap <A-k> <C-\><C-n><C-w>k
+    tnoremap <A-l> <C-\><C-n><C-w>l
+    nnoremap <A-h> <C-w>h
+    nnoremap <A-j> <C-w>j
+    nnoremap <A-k> <C-w>k
+    nnoremap <A-l> <C-w>l
+endif
+
