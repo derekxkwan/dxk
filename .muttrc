@@ -1,13 +1,13 @@
 #sets up mail box in home folder
 set mbox_type = Maildir
-set mbox="~/.maildir"
-set spoolfile="~/.maildir"
-set folder = "~/.maildir"
+#set mbox="~/.maildir"
+set spoolfile="+INBOX"
+set folder = "imaps://imap.gmail.com:993"
 #set record ="~/mail/sent/"
-#set postponed = "~/mail/drafts/"
+set postponed = "+[Gmail]/Drafts"
 
 #mailboxes, no idea if this works
-mailboxes =pd-list
+mailboxes =pd-list =pd-l2ork-dev =linux-audio =SC-USERS
 
 #navigate maildir folder structure
  mailboxes + `\
@@ -137,7 +137,10 @@ set sidebar_short_path = yes
 set sidebar_folder_indent = no
 set sidebar_sort_method = 'unsorted'
 set sidebar_new_mail_only = no
-set sidebar_on_right = yes
+
+bind index,pager \CP sidebar-prev       # Ctrl-Shift-P - Previous Mailbox
+bind index,pager \CN sidebar-next       # Ctrl-Shift-N - Next Mailbox
+bind index,pager \CO sidebar-open       # Ctrl-Shift-O - Open Highlighted Mailbox
 
 # Colors  
  color hdrdefault brightmagenta default  
