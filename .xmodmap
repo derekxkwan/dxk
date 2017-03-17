@@ -1,4 +1,6 @@
+remove Lock = Caps_Lock
 remove mod4 = Super_L
 remove mod4 = Super_R
 add control = Super_L
 add control = Super_R
+add control = Caps_Lock
