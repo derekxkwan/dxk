@@ -43,10 +43,13 @@ set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
+""GENERAL KEYBINDINGS
 "insert new line without going into insert mode
 "before current line then after current line
 nmap <C-o> O<Esc>
 nmap <CR> o<Esc>
+
+let mapleader ="\<Space>"
 
 "remapping for <esc> functionality
 nnoremap <D-[ <Esc>
