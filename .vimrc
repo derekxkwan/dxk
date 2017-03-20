@@ -49,7 +49,8 @@ let g:airline_powerline_fonts = 1
 nmap <C-o> O<Esc>
 nmap <CR> o<Esc>
 
-let mapleader ="\<Space>"
+"let mapleader ="\<Space>"
+let mapleader = ","
 
 "remapping for <esc> functionality
 nnoremap <D-[ <Esc>
