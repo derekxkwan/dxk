@@ -45,7 +45,7 @@
 
 (setq gnus-summary-line-format "%U%R %ud %I %(%[%2{ %-21,21f%} %]%) %B%s\n")
 
-(gnus-group-list-all-groups)
+(setq gnus-group-list-all-groups)
 
 ;;dired support (new in gnus 5.10.6)
 (require 'gnus-dired)
