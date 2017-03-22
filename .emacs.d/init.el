@@ -13,3 +13,4 @@
 
 (load-user-file "dk-personal.el")
 (load-user-file "dk-emms.el")
+(load-user-file "dk-misc.el")
