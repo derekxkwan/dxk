@@ -59,6 +59,10 @@ onoremap <D-[> <Esc>
 inoremap <D-[> <Esc>`^
 inoremap <Leader><Tab> <Tab>
 
+"COMMAND MAPPINGS
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
+
 "nvim stuff
 if has('nvim')
     "<Esc> to exit terminal mode, Super-[ and Ctrl-[ for good measure
