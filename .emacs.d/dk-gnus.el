@@ -57,6 +57,15 @@
 
 (setq gnus-group-list-all-groups)
 
+;other
+(setq mail-signature t
+    gnus-show-mime t
+    gnus-show-mime-method 'gnus-article-preview-mime-message
+     gnus-suppress-duplicates t
+    gnus-confirm-mail-reply-to-news t
+    gnus-check-new-newsgroups 'ask-server
+    )
+
 ;;dired support (new in gnus 5.10.6)
 (require 'gnus-dired)
 (add-hook 'dired-mode-hook 'turn-on-gnus-dired-mode)
