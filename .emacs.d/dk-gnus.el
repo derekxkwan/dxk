@@ -14,7 +14,8 @@
 (setq user-mail-address "user@gmail.com")
 (setq send-mail-function 'smtpmail-send-it)
 
-(setq gnus-permanently-visible-groups ".*") 
+(setq gnus-permanently-visible-groups ".*"
+      gnus-summary-insert-old-articles 50) ; doesn't quite work yet, use / o
 ;threading stuff
 (setq gnus-summary-thread-gathering-function
       'gnus-gather-threads-by-subject)
