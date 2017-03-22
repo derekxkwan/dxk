@@ -64,6 +64,7 @@
      gnus-suppress-duplicates t
     gnus-confirm-mail-reply-to-news t
     gnus-check-new-newsgroups 'ask-server
+     gnus-fetch-old-headers 'some
     )
 
 ;;dired support (new in gnus 5.10.6)
