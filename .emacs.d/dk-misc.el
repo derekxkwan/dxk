@@ -9,12 +9,14 @@
   (yank)                                                                                      
   )                                                                                           
  
+(global-set-key (kbd "C-d") 'duplicate-line) 
+
 ;NAVIGATION
 (global-set-key (kbd "C-n")
     (lambda () (interactive) (forward-line  5)))
 (global-set-key (kbd "C-p")
     (lambda () (interactive) (forward-line -5)))
-(global-set-key (kbd "C-d") 'duplicate-line) 
+
 
 ; from lord ophidian of stackoverflow
 (defun my-c-mode-common-hook ()
