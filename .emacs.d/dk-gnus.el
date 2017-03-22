@@ -14,6 +14,7 @@
 (setq user-mail-address "user@gmail.com")
 (setq send-mail-function 'smtpmail-send-it)
 
+(setq gnus-permanently-visible-groups ".*") 
 ;threading stuff
 (setq gnus-summary-thread-gathering-function
       'gnus-gather-threads-by-subject)
@@ -29,16 +30,7 @@
 ;; Replace [ and ] with _ in ADAPT file names
     (setq nnheader-file-name-translation-alist '((?[ . ?_) (?] . ?_)) )
 
-(setq gnus-large-newsgroup 'nil)
 (add-hook 'gnus-group-mode-hook 'gnus-topic-mode)
-(defun my-gnus-group-list-subscribed-groups ()
-  "List all subscribed groups with or without un-read messages"
-  (interactive)
-  (gnus-group-list-all-groups 5))
-
-(define-key gnus-group-mode-map
-  ;; list all the subscribed groups even they contain zero un-read messages
-  (kbd "o") 'my-gnus-group-list-subscribed-groups)
 
 ;fetching
 (setq gnus-auto-select-first nil)        ; Just show the summary, don't fetch the first article.
