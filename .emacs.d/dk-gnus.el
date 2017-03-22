@@ -40,6 +40,9 @@
   ;; list all the subscribed groups even they contain zero un-read messages
   (kbd "o") 'my-gnus-group-list-subscribed-groups)
 
+;fetching
+(setq gnus-auto-select-first nil)        ; Just show the summary, don't fetch the first article.
+ (setq gnus-auto-select-next nil)         ; Same thing with next article.
 
 ;sorting
 (setq gnus-thread-sort-functions
