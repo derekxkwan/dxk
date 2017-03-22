@@ -9,3 +9,8 @@
   )                                                                                           
                                                                                               
 (global-set-key (kbd "C-d") 'duplicate-line) 
+
+; from lord ophidian of stackoverflow
+(defun my-c-mode-common-hook ()
+  (line-number-mode 1))
+(add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
