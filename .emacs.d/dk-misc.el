@@ -1,15 +1,18 @@
 ;COPYING
-; from user nathan of stackoverflow
-(defun duplicate-line()                                                                       
-  (interactive)                                                                               
-  (move-beginning-of-line 1)                                                                  
-  (kill-line)                                                                                 
-  (yank)                                                                                      
-  (newline)                                                                                   
-  (yank)                                                                                      
-  )                                                                                           
- 
-(global-set-key (kbd "C-d") 'duplicate-line) 
+;from macchan of emacswiki, C-w and M-w cuts and copies lines respectively
+(defadvice kill-ring-save (before slick-copy activate compile) "When called
+  interactively with no active region, copy a single line instead."
+  (interactive (if mark-active (list (region-beginning) (region-end)) (message
+  "Copied line") (list (line-beginning-position) (line-beginning-position
+  2)))))
+
+(defadvice kill-region (before slick-cut activate compile)
+  "When called interactively with no active region, kill a single line instead."
+  (interactive
+    (if mark-active (list (region-beginning) (region-end))
+      (list (line-beginning-position)
+        (line-beginning-position 2)))))
+
 
 ;NAVIGATION
 (global-set-key (kbd "C-n")
