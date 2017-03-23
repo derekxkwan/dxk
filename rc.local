@@ -11,7 +11,8 @@
 #                                                                               
 # By default this script does nothing.                                          
 
-#ctrl-map is in my bashscripts, maps super and win keys to ctrl
+#ctrl-map is in my bashscripts (/usr/local/bin)
+#and maps super and win keys to ctrl
 ctrl-map                                         
 rfkill block bluetooth                                                          
 exit 0                                                                          
