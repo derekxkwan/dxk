@@ -10,8 +10,9 @@
 # bits.                                                                         
 #                                                                               
 # By default this script does nothing.                                          
-                                                                                
-setxkbmap -option caps:ctrl_modifier                                            
+
+#ctrl-map is in my bashscripts, maps super and win keys to ctrl
+ctrl-map                                         
 rfkill block bluetooth                                                          
 exit 0                                                                          
        
