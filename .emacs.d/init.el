@@ -16,3 +16,4 @@
 (load-user-file "dk-emms.el")
 (load-user-file "dk-misc.el")
 (load-user-file "dk-org.el")
+(load-user-file "dk-godmode.el")
