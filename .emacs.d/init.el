@@ -1,4 +1,4 @@
-;note: installed packages: emms, orgmode, godmode
+;note: installed packages: emms, orgmode, godmode, slime, geiser
 (defconst user-init-dir
   (cond ((boundp 'user-emacs-directory)
          user-emacs-directory)
@@ -17,3 +17,4 @@
 (load-user-file "dk-misc.el")
 (load-user-file "dk-org.el")
 (load-user-file "dk-godmode.el")
+(load-user-file "dk-slime.el")
