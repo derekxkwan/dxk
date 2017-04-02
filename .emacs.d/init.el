@@ -18,3 +18,4 @@
 (load-user-file "dk-org.el")
 (load-user-file "dk-godmode.el")
 (load-user-file "dk-slime.el")
+(load-user-file "dk-twittering.el")
