@@ -1,4 +1,4 @@
-;note: installed packages: emms, orgmode, godmode, slime, geiser
+;note: installed packages: emms, orgmode, godmode, slime, geiser, auto-complete
 (defconst user-init-dir
   (cond ((boundp 'user-emacs-directory)
          user-emacs-directory)
@@ -19,3 +19,4 @@
 (load-user-file "dk-godmode.el")
 (load-user-file "dk-slime.el")
 (load-user-file "dk-twittering.el")
+(load-user-file "dk-auto-complete.el")
