@@ -1,0 +1,153 @@
+IDE:
+  editor:
+    blinkDuration: 600
+    colors:
+      evaluatedCode: !textFormat
+        color: "#000000"
+        background: "#f8a200"
+      lineNumbers: !textFormat
+        {}
+      matchingBrackets: !textFormat
+        color: "#ff0000"
+        bold: true
+      mismatchedBrackets: !textFormat
+        color: "#ffffff"
+        background: "#960000"
+      searchResult: !textFormat
+        color: "#7f7f7f"
+        background: "#9cff31"
+      selection: !textFormat
+        {}
+      text: !textFormat
+        color: "#ffffff"
+        background: "#000000"
+    disableBlinkingCursor: false
+    font:
+      antialias: 2
+      family: DejaVu Sans Mono
+      size: 12
+    highlightBracketContents: true
+    highlightCurrentLine: false
+    highlighting:
+      built-in: !textFormat
+        color: "#00e6ff"
+      char: !textFormat
+        color: "#00ff00"
+      class: !textFormat
+        color: "#03ffc9"
+      comment: !textFormat
+        color: "#ff0000"
+      env-var: !textFormat
+        color: "#ff902f"
+      keyword: !textFormat
+        color: "#8000ff"
+        bold: true
+      number: !textFormat
+        color: "#fb00ff"
+      primitive: !textFormat
+        color: "#00e6ff"
+      string: !textFormat
+        color: "#cfcfcf"
+      symbol: !textFormat
+        color: "#00ff00"
+    inactiveEditorFadeAlpha: 64
+    indentWidth: 4
+    insertMatchingTokens: false
+    lineWrap: true
+    spaceIndent: false
+    stepForwardEvaluation: false
+    theme: dark
+    themes:
+      My old theme:
+        built-in: !textFormat
+          color: "#3333bf"
+          italic: false
+        char: !textFormat
+          color: "#007300"
+          italic: false
+        class: !textFormat
+          color: "#0000d2"
+          italic: false
+        comment: !textFormat
+          color: "#bf0000"
+          italic: false
+        currentLine: !textFormat
+          color: "#000000"
+          background: "#f1f1f1"
+          italic: false
+        env-var: !textFormat
+          color: "#8c4614"
+          italic: false
+        evaluatedCode: !textFormat
+          color: "#000000"
+          background: "#f8a200"
+        keyword: !textFormat
+          color: "#0000e6"
+          bold: true
+          italic: false
+        lineNumbers: !textFormat
+          {}
+        matchingBrackets: !textFormat
+          color: "#ff0000"
+          bold: true
+        mismatchedBrackets: !textFormat
+          color: "#ffffff"
+          background: "#960000"
+          italic: false
+        number: !textFormat
+          color: "#980099"
+          italic: false
+        postwindowemphasis: !textFormat
+          color: "#000000"
+          bold: true
+          italic: false
+        postwindowerror: !textFormat
+          color: "#d11c24"
+          italic: false
+        postwindowsuccess: !textFormat
+          color: "#738a05"
+          italic: false
+        postwindowtext: !textFormat
+          color: "#3c3c3c"
+          italic: false
+        postwindowwarning: !textFormat
+          color: "#a57706"
+          italic: false
+        primitive: !textFormat
+          color: "#3333bf"
+          italic: false
+        searchResult: !textFormat
+          color: "#7f7f7f"
+          background: "#782a26"
+        selection: !textFormat
+          {}
+        string: !textFormat
+          color: "#5f5f5f"
+          italic: false
+        symbol: !textFormat
+          color: "#007300"
+          italic: false
+        text: !textFormat
+          {}
+        whitespace: !textFormat
+          color: "#8e8e8e"
+          italic: false
+    useComboBox: false
+    useComboBoxWhenSplitting: false
+  interpreter:
+    autoStart: true
+    configFile: ""
+    runtimeDir: ""
+    standalone: false
+  mainWindow:
+    detached: !QVariantMap
+      documents-dock: ""
+      help-dock: ""
+      post-dock: ""
+    geometry: AdnQywABAAAAAADxAAAAoQAABlIAAAR/AAAA8gAAALsAAAZRAAAEfgAAAAAAAA==
+    state: AAAA/wAAAAD9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAfsAAAAcAGQAbwBjAHUAbQBlAG4AdABzAC0AZABvAGMAawAAAAAA/////wAAAGoA////AAAAAQAAAigAAAOB/AIAAAAC+wAAABIAaABlAGwAcAAtAGQAbwBjAGsBAAAAIgAAAhcAAABWAP////sAAAASAHAAbwBzAHQALQBkAG8AYwBrAQAAAjoAAAFpAAAAVgD///8AAAM3AAADgQAAAAEAAAACAAAAAQAAAAL8AAAAAA==
+  postWindow:
+    lineWrap: false
+    scrollback: 1000
+  recentDocuments: !QVariantList
+  startWithSession: last
