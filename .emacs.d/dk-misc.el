@@ -1,5 +1,5 @@
-;COPYING
-;from macchan of emacswiki, C-w and M-w cuts and copies lines respectively
+;;COPYING
+;;from macchan of emacswiki, C-w and M-w cuts and copies lines respectively
 (defadvice kill-ring-save (before slick-copy activate compile) "When called
   interactively with no active region, copy a single line instead."
   (interactive (if mark-active (list (region-beginning) (region-end)) (message
@@ -14,13 +14,13 @@
         (line-beginning-position 2)))))
 
 
-;NAVIGATION
+;;NAVIGATION
 (global-set-key (kbd "C-n")
     (lambda () (interactive) (forward-line  5)))
 (global-set-key (kbd "C-p")
     (lambda () (interactive) (forward-line -5)))
 
-;from emacswiki
+;;from emacswiki
 (defun goto-match-paren (arg)
   "Go to the matching parenthesis if on parenthesis, otherwise insert %.
 vi style of % jumping to matching brace."
@@ -30,7 +30,11 @@ vi style of % jumping to matching brace."
         (t (self-insert-command (or arg 1)))))
 (global-set-key (kbd "C-%") 'goto-match-paren)
 
-; from lord ophidian of stackoverflow
+;; from lord ophidian of stackoverflow
 (defun my-c-mode-common-hook ()
   (line-number-mode 1))
 (add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
+
+;;ido mode stuff
+(ido-mode 1)
+(setq ido-separator "\n")
