@@ -20,3 +20,4 @@
 (load-user-file "dk-slime.el")
 (load-user-file "dk-twittering.el")
 (load-user-file "dk-auto-complete.el")
+(load-user-file "dk-sclang.el")
