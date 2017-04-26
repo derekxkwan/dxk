@@ -1,3 +1,6 @@
+;;GENERAL CONFIG
+(setq python-shell-interpreter "/usr/bin/python3")
+
 ;;COPYING
 ;;from macchan of emacswiki, C-w and M-w cuts and copies lines respectively
 (defadvice kill-ring-save (before slick-copy activate compile) "When called
