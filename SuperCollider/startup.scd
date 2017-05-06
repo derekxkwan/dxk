@@ -62,7 +62,7 @@ Event.addEventType(\polyInstr, { |server|
 });
 
 ~loadsynths = {
-	{
+	
 	var path, files;
 	path = "/home/user/dxkSynthDefs/";
 	files = pathMatch(path ++ "dxk*.scd") ++ pathMatch(path ++ "not*.scd");
