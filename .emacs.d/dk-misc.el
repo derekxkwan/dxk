@@ -49,7 +49,14 @@ vi style of % jumping to matching brace."
   (interactive)
   (enlarge-window (/ (window-height (next-window)) 2)))
 
-(global-set-key (kbd "C-c v") 'halve-other-window-height)
+(global-set-key (kbd "C-c 2") 'halve-other-window-height)
+
+(defun twothird-other-window-width ()
+  "Expand current window to use half of the other window's width."
+  (interactive)
+  (enlarge-window-horizontally (/ (window-width (next-window)) 3)))
+
+(global-set-key (kbd "C-c 3") 'twothird-other-window-width)
 
 ;;toggle window split mode from jeffdwork of emacswiki
 (defun toggle-window-split ()
