@@ -48,7 +48,7 @@
 
 (setq gnus-summary-line-format "%U%R %ud %I %(%[%2{ %-21,21f%} %]%) %B%s\n")
 
-(setq gnus-group-list-all-groups)
+(setq gnus-group-list-all-groups t)
 
 ;other
 (setq mail-signature t
