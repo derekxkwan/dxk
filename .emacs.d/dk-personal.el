@@ -12,13 +12,16 @@
 (setq package-enable-at-startup nil)
 (package-initialize)
 
-;various prefs
-;paren mode
+;;various prefs
+;;paren mode
 (show-paren-mode 1)
 (setq show-paren-delay 0)
 (setq x-select-enable-clipboard t) ;copy to clipboard for x
 
-;color scheme
+;;font
+(set-frame-font "Inconsolata 14" nil t)
+
+;;color scheme
 (custom-set-variables
  '(custom-enabled-themes (quote (manoj-dark))))
 (custom-set-faces )
