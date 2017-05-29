@@ -1,4 +1,4 @@
-;note: installed packages: emms, orgmode, godmode, slime, geiser, auto-complete
+;note: installed packages: emms, orgmode, godmode, slime, geiser, auto-complete, ein
 (defconst user-init-dir
   (cond ((boundp 'user-emacs-directory)
          user-emacs-directory)
@@ -22,3 +22,4 @@
 (load-user-file "dk-auto-complete.el")
 (load-user-file "dk-sclang.el")
 (load-user-file "dk-python.el")
+(load-user-file "dk-ein.el")
