@@ -6,6 +6,7 @@
 ;; Enable transient mark mode
 (transient-mark-mode 1)
 
+(define-key org-mode-map "\M-q" 'toggle-truncate-lines)
 ;;;;org-mode configuration
 ;; Enable org-mode
 (require 'org)
