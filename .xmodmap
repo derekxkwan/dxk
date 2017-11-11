@@ -4,3 +4,5 @@ remove mod4 = Super_R
 add control = Super_L
 add control = Super_R
 add control = Caps_Lock
+
+keycode 133 = Multi_key
