@@ -1,6 +1,6 @@
 ;; all from gnu website
 ;; add .m hook
-(autoload 'octave-mode "octave-mod" nil t)
+
 (setq auto-mode-alist
       (cons '("\\.m$" . octave-mode) auto-mode-alist))
 
