@@ -16,6 +16,7 @@
 (load-user-file "dk-emms.el")
 (load-user-file "dk-misc.el")
 (load-user-file "dk-org.el")
+(load-user-file "dk-octave.el")
 (load-user-file "dk-godmode.el")
 (load-user-file "dk-slime.el")
 (load-user-file "dk-twittering.el")
