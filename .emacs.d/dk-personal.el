@@ -25,3 +25,6 @@
 (custom-set-variables
  '(custom-enabled-themes (quote (manoj-dark))))
 (custom-set-faces )
+
+;;disable newline after enter
+(setq-default electric-indent-inhibit t)
