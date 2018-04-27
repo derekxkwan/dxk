@@ -17,3 +17,6 @@ if [ -n "$BASH_VERSION" ]; then
 fi
 
 /usr/bin/setxkbmap -option ctrl:nocaps
+
+#disable extra buttons on mouse
+/usr/bin/xinput set-button-map 17 1 2 3 4 5 6 7 0 0 0 0 0
