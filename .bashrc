@@ -119,3 +119,4 @@ fi
 # ================================ MY OWN STUFF ================================
 # needed for tmux to work witih the right color
 export TERM="xterm-256color"
+PATH=$PATH:~/.scripts
