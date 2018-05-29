@@ -1,0 +1,48 @@
+audioapi: 5
+noaudioin: False
+audioindev1: 0 4
+audioindevname1: JACK
+noaudioout: False
+audiooutdev1: 0 8
+audiooutdevname1: JACK
+audiobuf: 20
+rate: 44100
+callback: 0
+blocksize: 64
+midiapi: 1
+nomidiin: False
+midiindev1: 0
+midiindevname1: ALSA MIDI device #1
+nomidiout: False
+midioutdev1: 0
+midioutdevname1: ALSA MIDI device #1
+path1: /home/dxk/pd-externals/flatgui
+path2: /usr/local/lib/pd/extra/Gem
+path3: /home/dxk/pd-externals/list-abs
+path4: /home/dxk/pd-externals/pdklist
+path5: /home/dxk/pd-externals/pdkvabs
+path6: /home/dxk/Documents/Pd/externals
+path7: /home/dxk/pd-externals
+path8: /home/dxk/pd-externals/pdkez
+path9: /home/dxk/pd-externals/pmpd
+path10: /home/dxk/pd-externals/timbreID
+path11: /home/dxk/pd-externals/misc
+path12: /home/dxk/pd-externals/iemguts
+path13: /home/dxk/pd-externals/moonlib
+path14: /home/dxk/pd-externals/pdklua
+path15: /home/dxk/pd-externals/pduino
+path16: /home/dxk/pd-externals/pdksynth
+path17: /home/dxk/pd-externals/pdkstruct
+npath: 17
+standardpath: 1
+verbose: 0
+loadlib1: Gem
+loadlib2: Hoa
+loadlib3: pix_opencv
+loadlib4: timbreIDLib
+loadlib5: pdlua
+nloadlib: 5
+defeatrt: 0
+flags: -font-size 12
+zoom: 1
+loading: no
