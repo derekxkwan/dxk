@@ -115,3 +115,7 @@ vi style of % jumping to matching brace."
 
     (global-set-key (kbd "C-c +") 'increment-number-decimal)
     (global-set-key (kbd "C-c -") 'decrement-number-decimal)
+
+;; shell stuff
+(setq shell-file-name "bash")
+(setq shell-command-switch "-ic")
