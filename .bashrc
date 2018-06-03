@@ -120,3 +120,5 @@ fi
 # needed for tmux to work witih the right color
 export TERM="xterm-256color"
 PATH=$PATH:~/.scripts
+
+export GEM_HOME=$(ruby -e 'print Gem.user_dir')
