@@ -26,3 +26,4 @@
 (load-user-file "dk-ein.el")
 (load-user-file "dk-nov.el")
 (load-user-file "dk-ruby.el")
+(load-user-file "dk-asm.el")
