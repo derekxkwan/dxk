@@ -1,4 +1,3 @@
-;note: installed packages: emms, orgmode, godmode, slime, geiser, auto-complete, ein
 (defconst user-init-dir
   (cond ((boundp 'user-emacs-directory)
          user-emacs-directory)
