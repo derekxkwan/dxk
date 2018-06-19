@@ -5,6 +5,7 @@
          user-init-directory)
         (t "~/.emacs.d/")))
 
+(add-to-list 'load-path (expand-file-name "lisp/" user-emacs-directory))
 
 (defun load-user-file (file)
   (interactive "f")
