@@ -10,7 +10,7 @@
 (add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/"))
 
 (setq package-enable-at-startup nil)
-(package-initialize)
+;;(package-initialize)
 
 ;;various prefs
 ;;paren mode
