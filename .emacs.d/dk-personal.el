@@ -27,3 +27,5 @@
 
 ;;disable newline after enter
 (setq-default electric-indent-inhibit t)
+
+(defalias 'yes-or-no-p 'y-or-n-p)
