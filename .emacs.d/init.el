@@ -29,3 +29,4 @@
 (load-user-file "dk-asm.el")
 (load-user-file "dk-platformio.el")
 (load-user-file "dk-processing.el")
+(load-user-file "dk-clojure.el")
