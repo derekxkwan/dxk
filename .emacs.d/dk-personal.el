@@ -19,12 +19,11 @@
 (setq x-select-enable-clipboard t) ;copy to clipboard for x
 
 ;;font
-(set-frame-font "Inconsolata 14" nil t)
+(set-frame-font "DejaVu Sans Mono 13" nil t)
 
-;;color scheme
-(custom-set-variables
- '(custom-enabled-themes (quote (manoj-dark))))
-(custom-set-faces )
+(setq python-shell-interpreter "/usr/bin/python3" python-shell-interpreter-args "-i")
+
+(load-theme 'monokai t)
 
 ;;disable newline after enter
 (setq-default electric-indent-inhibit t)
