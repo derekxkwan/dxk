@@ -5,4 +5,6 @@ add control = Super_L
 add control = Super_R
 add control = Caps_Lock
 
+keycode 133 = Multi_key
+
 pointer = 1 2 3 4 5 6 7 0 0 0 0 0
