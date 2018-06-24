@@ -30,3 +30,4 @@
 (load-user-file "dk-platformio.el")
 (load-user-file "dk-processing.el")
 (load-user-file "dk-clojure.el")
+(load-user-file "dk-bufmove.el")
