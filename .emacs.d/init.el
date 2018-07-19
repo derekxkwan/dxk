@@ -20,6 +20,7 @@
 (load-user-file "dk-octave.el")
 (load-user-file "dk-godmode.el")
 (load-user-file "dk-slime.el")
+(load-user-file "dk-geiser.el")
 (load-user-file "dk-twittering.el")
 (load-user-file "dk-auto-complete.el")
 (load-user-file "dk-sclang.el")
