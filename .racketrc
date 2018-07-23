@@ -1,4 +1,5 @@
 ;; The following line loads `xrepl' support
 (require xrepl)
 (require racket/enter)
+(compile-enforce-module-constants #f)
 (println "racketrc loaded")
