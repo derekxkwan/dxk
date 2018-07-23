@@ -1,3 +1,5 @@
+(global-set-key (kbd "M-n") 'forward-whitespace)
+
 ;;GENERAL CONFIG
 (setq python-shell-interpreter "/usr/bin/python3")
 
@@ -119,3 +121,10 @@ vi style of % jumping to matching brace."
 ;; shell stuff
 (setq shell-file-name "bash")
 (setq shell-command-switch "-ic")
+
+;; from Dan on StackOverflow
+(defun skip-to-next-whitespace ()
+  "Move point forward to next whitespace character."
+  (interactive)
+  (skip-syntax-forward "^\s"))
+
