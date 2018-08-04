@@ -9,5 +9,5 @@
  (define-key w3m-mode-map [up] 'previous-line)
  (define-key w3m-mode-map [down] 'next-line)))
 
-(load-user-file "company-scel-backend.el")
+(load-user-file "company-sclang-backend.el")
 
