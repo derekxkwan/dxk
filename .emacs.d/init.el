@@ -22,7 +22,7 @@
 (load-user-file "dk-slime.el")
 (load-user-file "dk-geiser.el")
 (load-user-file "dk-twittering.el")
-(load-user-file "dk-auto-complete.el")
+(load-user-file "dk-company.el")
 (load-user-file "dk-sclang.el")
 (load-user-file "dk-python.el")
 (load-user-file "dk-ein.el")
