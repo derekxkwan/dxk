@@ -29,3 +29,11 @@
 (setq-default electric-indent-inhibit t)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
+
+;; show line numbers for "prog-mode derived major modes"
+(if (version<= "26.0.50" emacs-version )
+    (add-hook 'prog-mode-hook #'display-line-numbers-mode)
+    (add-hook 'prog-mode-hook #'linum-mode)
+  )
+
+
