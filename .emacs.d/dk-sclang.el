@@ -11,3 +11,12 @@
 
 (load-user-file "company-sclang-backend.el")
 
+;; need this since it doesn't seem to follow under a prog mode
+(defun sclang-mode-line-hook ()
+  (if (version<= "26.0.50" emacs-version )
+      (display-line-numbers-mode 1)
+    (linum-mode 1))
+  )
+
+
+(add-hook 'sclang-mode-hook #'display-line-numbers-mode)
