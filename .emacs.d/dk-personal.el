@@ -36,4 +36,8 @@
     (add-hook 'prog-mode-hook #'linum-mode)
   )
 
+;; disable truncate lines in prog mode
+(add-hook 'prog-mode-hook (lambda () (setq truncate-lines nil)))
+
+
 
