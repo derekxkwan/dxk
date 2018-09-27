@@ -25,6 +25,9 @@
 
 (load-theme 'monokai t)
 
+;; fix dull highlight 
+(set-face-attribute 'region nil :background "#666" :foreground "#ffffff")
+
 ;;disable newline after enter
 (setq-default electric-indent-inhibit t)
 
