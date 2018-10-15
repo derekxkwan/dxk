@@ -33,3 +33,4 @@
 (load-user-file "dk-processing.el")
 (load-user-file "dk-clojure.el")
 (load-user-file "dk-bufmove.el")
+(load-user-file "dk-web-mode.el")
