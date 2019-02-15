@@ -2,11 +2,16 @@
 (require 'sonic-pi)
 (setq sonic-pi-path "/usr/lib/sonic-pi/") ; Must end with "/"
 
+(load-user-file "company-sonicpi-backend.el")
 ;; Optionally define a hook
 (add-hook 'sonic-pi-mode-hook
           (lambda ()
             ;; This setq can go here instead if you wish
             (inf-ruby-minor-mode -1)
+	    (if (version<= "26.0.50" emacs-version )
+		(display-line-numbers-mode 1)
+	      (linum-mode 1))
+
             ;;(define-key ruby-mode-map "\C-c\M-j" 'sonic-pi-jack-in)
             ;;(define-key ruby-mode-map "\C-c\M-c" 'sonic-pi-connect)
             ;;(define-key ruby-mode-map "\C-c\C-k" 'sonic-pi-send-buffer)
@@ -14,4 +19,5 @@
             ;;(define-key ruby-mode-map "\C-c\C-q" 'sonic-pi-quit)
             ;;(define-key ruby-mode-map "\C-c\C-b" 'sonic-pi-stop-all)
             ;;(define-key ruby-mode-map "\C-c\C-c" 'sonic-pi-send-live-loop)
+
             ))
