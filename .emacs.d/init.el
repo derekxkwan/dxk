@@ -35,3 +35,4 @@
 (load-user-file "dk-bufmove.el")
 (load-user-file "dk-web-mode.el")
 (load-user-file "dk-sonicpi.el")
+(load-user-file "dk-dired.el")
