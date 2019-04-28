@@ -23,12 +23,12 @@ fi
 
 # disable key repeat for everything EXCEPT backspace, enter AND arrow keys
 # doesn't seem to be working, maybe xfce overrides?
-/usr/bin/xset r on
-/usr/bin/seq 8 255 | /usr/bin/xargs -n 1 /usr/bin/xset -r
-/usr/bin/xset r 22
-/usr/bin/xset r 36
-/usr/bin/xset r 111
-/usr/bin/xset r 113
-/usr/bin/xset r 114
-/usr/bin/xset r 116
+#/usr/bin/xset r on
+#/usr/bin/seq 8 255 | /usr/bin/xargs -n 1 /usr/bin/xset -r
+#/usr/bin/xset r 22
+#/usr/bin/xset r 36
+#/usr/bin/xset r 111
+#/usr/bin/xset r 113
+#/usr/bin/xset r 114
+#/usr/bin/xset r 116
 
