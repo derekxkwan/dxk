@@ -128,3 +128,12 @@ vi style of % jumping to matching brace."
   (interactive)
   (skip-syntax-forward "^\s"))
 
+
+(defun delete-leading-whitespace (start end)
+  "Delete whitespace at the beginning of each line in region."
+  (interactive "*r")
+  (save-excursion
+    (if (not (bolp)) (forward-line 1))
+    (delete-whitespace-rectangle (point) end nil)))
+
+(global-set-key "\C-x\ \C-^" 'delete-leading-whitespace)
