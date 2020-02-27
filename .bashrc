@@ -123,7 +123,11 @@ PATH=$PATH:~/.scripts
 
 export GEM_HOME=$(ruby -e 'print Gem.user_dir')
 
-# from user Gilles on stackoverflow
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
+
+# from user Gilles of stackoverflow
 mkcd () {
   case "$1" in
     */..|*/../) cd -- "$1";; # that doesn't make any sense unless the directory already exists
@@ -142,4 +146,4 @@ export NVM_DIR="$HOME/.nvm"
 # Install Ruby Gems to ~/gems
 export GEM_HOME=$HOME/gems
 export PATH=$HOME/gems/bin:$PATH
-
+. $HOME/.ghcup/env
