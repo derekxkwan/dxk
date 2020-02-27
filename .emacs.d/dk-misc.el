@@ -120,7 +120,7 @@ vi style of % jumping to matching brace."
 
 ;; shell stuff
 (setq shell-file-name "bash")
-(setq shell-command-switch "-ic")
+(setq shell-command-switch "-c")
 
 ;; from Dan on StackOverflow
 (defun skip-to-next-whitespace ()
