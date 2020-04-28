@@ -8,3 +8,5 @@
 (require 'tidal)
 (load-user-file "company-tidal-backend.el")
 (setq tidal-interpreter "/home/dxk/.ghcup/bin/ghci")
+(setq tidal-boot-script-path "/home/dxk/tidalstuff/config/BootTidal.hs")
+(add-hook 'tidal-mode-hook (lambda () (interactive-haskell-mode -1)))
