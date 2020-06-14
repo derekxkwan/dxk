@@ -7,5 +7,7 @@
 :seti -XTypeApplications
 :seti -XOverloadedStrings
 
-:set prompt "\ESC[1;35m\x03BB> \ESC[m"
-:set prompt-cont "\ESC[1;35m > \ESC[m"
+-- need to end all escape seqs with \STX
+:set prompt      "\ESC[92m\ESC[1m\STXλ> \ESC[m\STX"
+:set prompt-cont "\ESC[92m\ESC[1m\STX | \ESC[m\STX"
+:def hoogle \x -> return $ ":!hoogle " ++ x
