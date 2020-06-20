@@ -25,6 +25,7 @@ set hlsearch
 set incsearch
 set lazyredraw
 set magic
+set smartindent
 
 set showmatch
 set mat=2
