@@ -1,13 +1,10 @@
 let g:tidal_target = "terminal"
 let g:tidal_no_mappings = 1
 
-
-if exists("g:tidal_no_mappings") || g:tidal_no_mappings
-    nmap <buffer> <localleader>c <Plug>TidalConfig
-    xmap <buffer> <c-c> <Plug>TidalRegionSend
-    nmap <buffer> <c-c> <Plug>TidalParagraphSend
-    imap <buffer> <c-c> <Esc><Plug>TidalParagraphSend<Esc>i<Right>
-endif
+nmap <buffer> <localleader>c <Plug>TidalConfig
+xmap <buffer> <c-s> <Plug>TidalRegionSend
+nmap <buffer> <c-s> <Plug>TidalParagraphSend
+imap <buffer> <c-s> <Esc><Plug>TidalParagraphSend<Esc>i<Right>
 
   if !hasmapto('<Plug>TidalRegionSend', 'x')
     xmap <buffer> <localleader>s  <Plug>TidalRegionSend
