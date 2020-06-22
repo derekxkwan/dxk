@@ -6,10 +6,14 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'https://github.com/mipmip/vim-run-in-blender.git'
 Plug 'vimwiki/vimwiki'
 call plug#end()
+
 let g:deoplete#enable_at_startup = 1
 call deoplete#custom#option('auto_complete_delay', 1000)
 let g:vimwiki_list = [{ 'path': '$HOME/vimwiki/',
        \ 'syntax':'markdown', 'ext': '.md' }]
+
+let g:tidal_target = "terminal"
+let g:tidal_no_mappings = 1
 
 let maplocalleader=","
 :tnoremap <Esc> <C-\><C-n>
@@ -45,5 +49,3 @@ set novisualbell
 
 set shiftwidth=4
 set tabstop=4
-
-source $HOME/.vim/vimrcs/tidalrc.vim
