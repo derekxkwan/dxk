@@ -5,6 +5,7 @@ set spoolfile="+INBOX"
 set folder = "imaps://imap.gmail.com:993"
 #set record ="~/mail/sent/"
 set postponed = "+[Gmail]/Drafts"
+bind index G imap-fetch-mail
 
 #mailboxes, no idea if this works
 mailboxes =pd-list =pd-l2ork-dev =linux-audio =SC-USERS
