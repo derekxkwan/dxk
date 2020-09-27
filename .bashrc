@@ -147,3 +147,14 @@ export NVM_DIR="$HOME/.nvm"
 export GEM_HOME=$HOME/gems
 export PATH=$HOME/gems/bin:$PATH
 . $HOME/.ghcup/env
+
+export PATH=$HOME/.ghcup/bin:$PATH
+export PATH=$HOME/.cabal/bin:$PATH
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+# Rust stuff
+export CARGO_TARGET_DIR=$HOME/.rustbuild
