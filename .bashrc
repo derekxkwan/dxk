@@ -157,4 +157,4 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 
 # Rust stuff
-export CARGO_TARGET_DIR=$HOME/.rustbuild
+export CARGO_TARGET_DIR=$HOME/.cargo/build
