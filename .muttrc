@@ -111,7 +111,8 @@ set status_format = "-%r- %v ---[Folder: %f, Msgs: %m%?n? New: %n?%?d? Del: %d?%
 set alias_format = "%4n %t %-20a %r"
 
 #Special Keybindings  
-bind editor <space> noop  
+bind editor <space> noop
+bind index g noop 
 macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"  
 macro index ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"  
 macro index gs "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to Sent Mail" 
