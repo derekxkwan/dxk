@@ -174,3 +174,6 @@ bind index,pager \CO sidebar-open       # Ctrl-Shift-O - Open Highlighted Mailbo
 
 bind pager <up> previous-line #scroll inside the message rather than the index
 bind pager <down> next-line
+
+auto_view text/html # auto view html
+alternative_order text/plain text/enriched text/html # html last
