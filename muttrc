@@ -1,3 +1,5 @@
+#should be in ~/.muttrc/muttrc
+
 #sets up mail box in home folder
 set mbox_type = Maildir
 #set mbox="~/.maildir"
